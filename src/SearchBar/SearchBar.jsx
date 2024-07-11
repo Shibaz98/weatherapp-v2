@@ -12,10 +12,14 @@ function SearchBar(props){
         setSearchTerm(event.target.value); 
     };
 
+    const handleClick = () =>{
+        props.search(searchTerm)
+    };
+
     return(
         <div className="SearchBarContainer">
             <input type="text" placeholder="Enter Location Here" onChange={handleChange}/>
-            <button>Search!</button>
+            <button onClick={handleClick}>Search!</button>
         </div>
     );
 }; 

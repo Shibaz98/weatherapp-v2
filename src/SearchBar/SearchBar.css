@@ -10,6 +10,11 @@ button{
     width: 80px;
     font-size: 15px;
     font-weight: bold;
+    
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .SearchBarContainer{
