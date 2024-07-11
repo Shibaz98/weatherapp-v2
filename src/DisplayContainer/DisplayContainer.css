@@ -1,0 +1,8 @@
+.DisplayContainer{
+    justify-content: center;
+    border: solid black 2px;
+    height: 650px;
+    width: 500px;
+    background: rgb(249,139,7);
+    background: linear-gradient(0deg, rgba(249,139,7,1) 0%, rgba(229,148,27,1) 27%, rgba(0,251,255,1) 80%);
+}

@@ -2,8 +2,6 @@ import userEvent from "@testing-library/user-event";
 import './SearchBar.css'; 
 import { useState } from "react";
 
-
-
 function SearchBar(props){
     
     const [searchTerm, setSearchTerm] = useState(''); 
