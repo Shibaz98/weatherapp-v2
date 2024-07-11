@@ -23,7 +23,7 @@ function App() {
       <h1>Weather App with React!</h1>
       <SearchBar search={search}/>
       <div className='DisplaySection'>
-        <DisplayContainer/>
+        <DisplayContainer weather={weather}/>
       </div>
     </div>
   );
