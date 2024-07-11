@@ -1,0 +1,19 @@
+input{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+}
+
+button{
+    height: 45px;
+    margin-left: 10px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.SearchBarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
