@@ -3,14 +3,15 @@ import './App.css';
 import SearchBar from './SearchBar/SearchBar';
 import DisplayContainer from './DisplayContainer/DisplayContainer';
 import Weather from './Util/weather';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import FiveDay from './FiveDay/FiveDay';
 
 
 function App() {
 
   const [weather, setWeather] = useState('')
-  const [fiveday, setFiveday] = useState('')
+  const [fiveday, setFiveday] = useState([])
+  const [test, setTest] = useState([]); 
 
  
  const search = (term) =>{
@@ -19,8 +20,11 @@ function App() {
 
  const getForecast = (term) =>{
     Weather.getFiveday(term).then(setFiveday);
-    console.log(fiveday)
+
  };
+
+console.log(fiveday)
+ 
  
   
  

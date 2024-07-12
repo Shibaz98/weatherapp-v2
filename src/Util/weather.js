@@ -24,7 +24,7 @@ const Weather = {
             } else{
                 console.log ('error')
             }
-        }).then(jsonRepsonse => jsonRepsonse)
+        }).then(jsonRepsonse => jsonRepsonse.list)
     }, 
 
 }; 
