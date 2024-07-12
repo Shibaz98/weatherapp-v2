@@ -4,6 +4,8 @@ import SearchBar from './SearchBar/SearchBar';
 import DisplayContainer from './DisplayContainer/DisplayContainer';
 import Weather from './Util/weather';
 import { useState } from 'react';
+import FiveDay from './FiveDay/FiveDay';
+
 
 function App() {
 
@@ -24,6 +26,9 @@ function App() {
       <SearchBar search={search}/>
       <div className='DisplaySection'>
         <DisplayContainer weather={weather}/>
+      </div>
+      <div className='FiveDaySection'>
+        <FiveDay/>
       </div>
     </div>
   );

@@ -1,0 +1,10 @@
+.FiveDayContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    height: 350px;
+    width: 250px;
+    background: rgb(249,139,7);
+    background: linear-gradient(0deg, rgba(249,139,7,1) 0%, rgba(229,148,27,1) 27%, rgba(0,251,255,1) 80%);
+}
