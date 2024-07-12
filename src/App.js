@@ -10,20 +10,24 @@ import FiveDay from './FiveDay/FiveDay';
 function App() {
 
   const [weather, setWeather] = useState('')
+  const [fiveday, setFiveday] = useState('')
 
  
  const search = (term) =>{
-    console.log(term);
-    Weather.search(term).then(setWeather);  
-    console.log(weather); 
+    Weather.search(term).then(setWeather);   
+ };
+
+ const getForecast = (term) =>{
+    Weather.getFiveday(term).then(setFiveday);
+    console.log(fiveday)
  };
  
- 
+  
  
   return (
     <div className="App">
       <h1>Weather App with React!</h1>
-      <SearchBar search={search}/>
+      <SearchBar search={search} getForecast={getForecast}/>
       <div className='DisplaySection'>
         <DisplayContainer weather={weather}/>
       </div>

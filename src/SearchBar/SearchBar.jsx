@@ -12,6 +12,7 @@ function SearchBar(props){
 
     const handleClick = () =>{
         props.search(searchTerm)
+        props.getForecast(searchTerm)
     };
 
     return(
