@@ -11,7 +11,6 @@ function App() {
 
   const [weather, setWeather] = useState('')
   const [fiveday, setFiveday] = useState([])
-  const [test, setTest] = useState([]); 
   const [forecast, setForecast] = useState([]); 
 
  
@@ -26,21 +25,7 @@ function App() {
 
 console.log(Array.isArray(fiveday))  // this is deffo an array lol 
 console.log(fiveday); 
-
-console.log(forecast[3].main.temp)
-
-
-  
-
-
-
-
-
-
-
-
  
-  
  
   return (
     <div className="App">
@@ -50,7 +35,7 @@ console.log(forecast[3].main.temp)
         <DisplayContainer weather={weather}/>
       </div>
       <div className='FiveDaySection'>
-        <FiveDay/>
+        <FiveDay forecast={forecast}/>
       </div>
     </div>
   );
