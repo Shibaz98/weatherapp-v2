@@ -8,7 +8,8 @@ function FiveDay(props){
     } else 
 
     return(
-        <div className='test'>    
+        <div className='test'> 
+            <h1>Five day forecast</h1>   
         <div className='FiveDayContainer'>
             {props.forecast.map((weather, index) => (
                 <Forecast key={index} weather={weather}/>
